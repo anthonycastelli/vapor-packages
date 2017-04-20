@@ -1,18 +1,14 @@
 @_exported import Vapor
-import FluentProvider
+import LeafProvider
 
 extension Droplet {
     public func setup() throws {
-        try collection(Routes.self)
+        try collection(Routes(self.view))
     }
 }
 
 extension Config {
     public func setup() throws {
-        try addProvider(FluentProvider.Provider.self)
-        
-        preparations += [
-            Post.self
-        ]
+        try addProvider(LeafProvider.Provider.self)
     }
 }

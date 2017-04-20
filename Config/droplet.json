@@ -11,6 +11,8 @@
     
     "cipher": "crypto",
     
+    "view": "leaf",
+    
     "middleware": [
         "error",
         "date",
@@ -18,6 +20,6 @@
     ],
     
     "commands": [
-        "prepare"
+        
     ]
 }

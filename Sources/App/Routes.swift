@@ -1,6 +1,13 @@
 import Vapor
 
 final class Routes: RouteCollection {
+    
+    let view: ViewRenderer
+    
+    init(_ view: ViewRenderer) throws {
+        self.view = view
+    }
+    
     func build(_ builder: RouteBuilder) throws {
         builder.get("hello") { req in
             var json = JSON()
@@ -14,12 +21,9 @@ final class Routes: RouteCollection {
             return req.description
         }
         
-        try builder.resource("posts", PostController.self)
+        // Home
+        builder.get { _ in
+            return try self.view.make("home")
+        }
     }
 }
-
-/// Since Routes doesn't depend on anything
-/// to be initialized, we can conform it to EmptyInitializable
-///
-/// This will allow it to be passed by type.
-extension Routes: EmptyInitializable { }

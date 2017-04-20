@@ -1,0 +1,30 @@
+#extend("base")
+
+#export("header") {
+    <div class="header">
+        <span><h1>Vapor Packages</h1></span>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control custom" name="Search" placeholder="Search" value=#(search)>
+            </div>
+        </form>
+    </div>
+}
+
+#export("body") {
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-6">
+            2 of 3 (wider)
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+}
+
+#export("footer") {
+
+}

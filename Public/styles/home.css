@@ -1,0 +1,131 @@
+/* Text Styles */
+h1 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26px;
+}
+h3 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15px;
+}
+p {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+blockquote {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+/*.vapor-gradient */
+html {
+    background-color: red;
+    /* Top: #F8A4D8
+    Bottom: #6C63FF
+    */
+    background: #F8A4D8; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#F8A4D8, #6C63FF);
+    background: -o-linear-gradient(#F8A4D8, #6C63FF);
+    background: -moz-linear-gradient(#F8A4D8, #6C63FF);
+    background: linear-gradient(#F8A4D8, #6C63FF);
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header {
+    height: 700px;
+    width: 100%;
+
+    line-height: 300px;
+    text-align: center;
+}
+
+.header h1 {
+    padding-top: 200px;
+    text-align: center;
+    font-size: 450%;
+    color: #fff;
+}
+
+.header span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.btn {
+    margin-top: 30px;
+    width: 50%;
+}
+
+.btn-warning {
+    height: 50px;
+    background-color: #FFD747;
+    border-color: #FFD747;
+    border-radius: 25px;
+
+    color: #896D0B;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.btn-warning:hover {
+    height: 50px;
+    background-color: #FFD747;
+    border-color: #FFD747;
+    border-radius: 25px;
+
+    color: #896D0B;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.custom {
+    height: 65px;
+    background-color: #8256C4;
+    border-color: #8256C4;
+    border-radius: 10px;
+
+    margin-top: 100px;
+    width: 800px;
+
+    color: #fff;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+textarea:focus, input:focus, .uneditable-input:focus {
+    border-color: rgba(229, 203, 255, 0.9) !important;
+    box-shadow: 0 1px 1px rgba(229, 203, 255, 0.75) inset, 0 0 8px rgba(229, 203, 255, 0.6) !important;
+    outline: 0 none !important;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: white;
+}
